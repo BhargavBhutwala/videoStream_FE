@@ -1,12 +1,34 @@
-# React + Vite
+# Frontend – Video Streaming App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based user interface for uploading and playing videos via HLS streaming. Built with Flowbite-React components, HLS.js, and Video.js.
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This front-end application provides:
 
-## Expanding the ESLint configuration
+- **Video Upload UI**: Users can select and upload video files, see upload progress, and receive feedback.
+- **Video Playback**: Plays HLS streams with adaptive bitrate support via HLS.js and Video.js.
+- **Video ID Control**: Enter any valid `videoId` to load and play its HLS stream.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- File selection and validation before upload.
+- Upload progress bar with percentage and status messages.
+- Title and description form inputs for metadata.
+- Responsive Video.js player with HLS.js fallback.
+- Input field to change `videoId` on the fly.
+- Toast notifications for success/failure.
+
+---
+
+## Technologies Used
+
+- **React**
+- **Flowbite-React** for UI components
+- **Tailwind CSS** (via Flowbite)
+- **HLS.js** for HLS playback
+- **Video.js** for video player UI
+- **Axios** for HTTP requests
+- **React Toastify** for notifications
